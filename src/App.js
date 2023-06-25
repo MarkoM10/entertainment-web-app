@@ -1,7 +1,12 @@
-import "./App.css";
+import "./styles/App.scss";
+import NavigationBar from "./NavigationBar";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="appWrapper">
+      <NavigationBar />
+    </div>
+  );
 }
 
 export default App;

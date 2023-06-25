@@ -1,0 +1,56 @@
+@import "../styles/variables.scss";
+.navbar {
+  position: absolute;
+  width: 9.6rem;
+  background-color: $semiDarkBlue;
+  height: 93vh;
+  top: 3.5%;
+  left: 1.6%;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-rows: 10% 80% 10%;
+  align-items: center;
+  justify-items: center;
+
+  & .logoWrapper {
+    margin-top: 0.5rem;
+  }
+
+  & .logoWrapper a:first-child img {
+    height: 2.8rem;
+  }
+
+  & .iconsWrapper a:first-child img {
+    height: 2rem;
+  }
+
+  & a:nth-child(2) img {
+    height: 2rem;
+  }
+
+  & a:nth-child(3) img {
+    height: 2rem;
+  }
+  & a:nth-child(4) img {
+    height: 2rem;
+  }
+  & a:nth-child(5) img {
+    height: 2rem;
+  }
+
+  & .iconsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10rem;
+    gap: 4rem;
+    height: 100%;
+  }
+
+  & .userWrapper a:first-child img {
+    height: 4rem;
+    border: 0.1rem solid $white;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+}
