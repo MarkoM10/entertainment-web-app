@@ -1,0 +1,99 @@
+@import "../styles/variables.scss";
+.trendingWrapper {
+  & .trendingVideos {
+    display: flex;
+    gap: 4rem;
+    margin-top: 2.4rem;
+
+    & .trendingVideo {
+      width: 46rem;
+      height: 22rem;
+      border-radius: 1rem;
+      position: relative;
+      cursor: pointer;
+      background-size: cover !important;
+      background-position: center !important;
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 84%);
+
+      & .bookMarkWrapper {
+        width: 3rem;
+        height: 3rem;
+        background-color: #10141e80;
+        border-radius: 50%;
+        position: absolute;
+        right: 7%;
+        top: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .bookmarkIcon {
+          width: 1.5rem;
+        }
+
+        &:hover {
+          background-color: white;
+          color: black;
+          transition: 0.2s ease-in-out;
+        }
+      }
+
+      & .trendingDataTitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 90%;
+        margin-left: 2rem;
+
+        & .trendingData {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+
+          & label {
+            color: #c5c5c5;
+            font-family: $outfitSansSerif;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+          }
+
+          & svg {
+            width: 1.5rem;
+          }
+        }
+
+        & .trendingMovieTitle label {
+          font-family: $outfitSansSerif;
+          font-size: 2.5rem;
+          font-weight: 500;
+        }
+      }
+
+      & .playBtn {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        gap: 1.25rem;
+        border: none;
+        background-color: #ffffff40;
+        height: 48px;
+        width: 117px;
+        padding: 9px;
+        border-radius: 100rem;
+        justify-content: space-evenly;
+        cursor: pointer;
+
+        & label {
+          color: white;
+          font-size: 1.6rem;
+          font-family: $outfitSansSerif;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "./variables.scss";
+.searchBar {
+  margin: 5rem 0 0 0.5rem;
+  display: flex;
+  gap: 2rem;
+
+  & img {
+    width: 3.2rem;
+  }
+
+  & input {
+    background: transparent;
+    border: none;
+    font-size: 2.4rem;
+    color: white;
+    outline: none;
+    padding: 1.5rem 0;
+    width: 90%;
+  }
+
+  & input:focus {
+    border-bottom: 0.1rem solid $grayishBlue;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #888a8f;
+    font-family: "Outfit", sans-serif;
+  }
+}

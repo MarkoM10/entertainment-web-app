@@ -1,11 +1,14 @@
 @import "../styles/variables.scss";
+.navBarWrapper {
+  display: grid;
+}
 .navbar {
   position: absolute;
   width: 9.6rem;
   background-color: $semiDarkBlue;
   height: 93vh;
   top: 3.5%;
-  left: 1.6%;
+  justify-self: center;
   border-radius: 2rem;
   display: grid;
   grid-template-rows: 10% 80% 10%;

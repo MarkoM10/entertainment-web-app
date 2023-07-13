@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+.contentWrapper {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  margin-left: 1rem;
+
+  & .content {
+    display: block;
+    color: $white;
+    margin-top: 0.5rem;
+
+    & h2 {
+      font-size: 3rem;
+      font-family: $outfitSansSerif;
+      color: $white;
+      font-weight: 300;
+      margin: 3rem 0 0 0.8rem;
+    }
+  }
+}
